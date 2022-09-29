@@ -4,19 +4,22 @@ import Activities from './Components/Activities/Activities';
 import ActivitiesDetail from './Components/ActivitiesDetail/ActivitiesDetail';
 
 function App() {
-  const [selectedActivity, setSelectedActivity] = useState([])
-  const addTimeList = (activity) =>[
-    // console.log('added to list',activity);
-    setSelectedActivity(activity)
-  ] 
-  // console.log(selectedActivity)
+  // const [selectedActivity, setSelectedActivity] = useState([])
+  const [activityList, setActivityList] = useState([])
+
+  // click handler
+  const addTimeList = (activity) =>{
+    const newList = [...activityList,activity]
+    setActivityList(newList)
+    // setSelectedActivity(activity)
+}
   return (
     <div className="App">
       <header></header>
       <main className='flex justify-between'>
         <Activities addTimeList={addTimeList}></Activities>
         <ActivitiesDetail 
-        selectedActivity={selectedActivity}
+        activityList={activityList}
         ></ActivitiesDetail>
       </main>
       <footer></footer>

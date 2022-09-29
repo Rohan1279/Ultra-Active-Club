@@ -3,8 +3,11 @@ import Break from "../Break/Break";
 import ExerciseTime from "../ExerciseTime/ExerciseTime";
 
 const ActivitiesDetail = (props) => {
-    const {selectedActivity} = props 
+    const {activityList} = props
+    // const {selectedActivity} = props 
     // console.log(selectedActivity);
+    // console.log(activityList)
+
   const breakTimes = [10, 20, 30, 40];
   return (
     <div className="bg-red-400 w-[25%] px-8 pt-3 ">
@@ -50,7 +53,7 @@ const ActivitiesDetail = (props) => {
       {/*Exercide Detail section  */}
       <div className="bg-[#f5ebe0] rounded-lg justify-around px-1 py-4">
         <ExerciseTime
-        selectedActivity={selectedActivity}
+        activityList={activityList}
         ></ExerciseTime>
       </div>
       <div className="bg-[#f5ebe0] rounded-lg flex justify-around px-1 py-4">
