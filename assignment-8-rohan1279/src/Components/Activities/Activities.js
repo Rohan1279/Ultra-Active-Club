@@ -11,7 +11,7 @@ const Activities = () => {
       });
   }, []);
   return (
-    <div className="bg-blue-300 w-[80%] m-12">
+    <div className="bg-blue-300 w-[80%] p-10">
       <div className="text-left ">
         <h1 className="text-3xl">Activity Tracker</h1>
         <h2 className="text-xl">Select today's activity</h2>

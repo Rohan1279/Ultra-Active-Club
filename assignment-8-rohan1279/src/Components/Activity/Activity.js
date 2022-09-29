@@ -5,18 +5,20 @@ const Activity = (props) => {
   const { name, age, time, ratings, img } = props.activity;
   return (
     <div>
-      <div className="card w-full h-[450px]  glass">
+      <div className="card w-full h-[480px] glass">
         <figure>
           <img  src={img} alt="workout" className="w-full h-44 bg-violet-400 " />
         </figure>
         <div className="card-body text-left">
-          <h2 className="card-title">{name}</h2>
+          <h2 className="card-title text-2xl">{name}</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, saepe.</p>
-          <p>For age: {age}</p>
-          <p>Time required: {time}</p>
+          <p className="font-medium">For age: <span className="font-bold">{age}</span></p>
+          <p className="font-medium">Time required: <span className="font-bold">{time}</span></p>
+          <p className="font-medium">Rating: <span className="font-bold">{ratings}</span></p>
+          
 
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Learn now!</button>
+            <button className="btn w-full">Add to list</button>
           </div>
         </div>
       </div>
