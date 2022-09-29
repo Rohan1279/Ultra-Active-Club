@@ -8,7 +8,7 @@ const Activity = (props) => {
     <div>
       <div className="card w-full h-[480px] glass">
         <figure>
-          <img  src={img} alt="workout" className="w-full h-44 bg-violet-400 " />
+          <img  src={img} alt="workout" className="w-full h-44 bg-violet-400 "/>
         </figure>
         <div className="card-body text-left">
           <h2 className="card-title text-2xl">{name}</h2>

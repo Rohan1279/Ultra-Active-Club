@@ -2,11 +2,14 @@ import React from "react";
 import Break from "../Break/Break";
 import ExerciseTime from "../ExerciseTime/ExerciseTime";
 
-const ActivitiesDetail = () => {
+const ActivitiesDetail = (props) => {
+    const {selectedActivity} = props 
+    // console.log(selectedActivity);
   const breakTimes = [10, 20, 30, 40];
   return (
-    <div className="bg-red-400 w-[25%] px-8 pt-3">
-      <div className="flex justify-evenly items-center">
+    <div className="bg-red-400 w-[25%] px-8 pt-3 ">
+      <div className="sticky top-0">
+      <div className="flex justify-evenly items-center ">
         <img
           src="https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/muscular-guy-doing-cable-flys.jpg?itok=cSCNyLEj"
           alt="profile"
@@ -46,10 +49,13 @@ const ActivitiesDetail = () => {
       <p className="text-left">Exercise Detail</p>
       {/*Exercide Detail section  */}
       <div className="bg-[#f5ebe0] rounded-lg justify-around px-1 py-4">
-        <ExerciseTime></ExerciseTime>
+        <ExerciseTime
+        selectedActivity={selectedActivity}
+        ></ExerciseTime>
       </div>
       <div className="bg-[#f5ebe0] rounded-lg flex justify-around px-1 py-4">
         
+      </div>
       </div>
     </div>
   );
