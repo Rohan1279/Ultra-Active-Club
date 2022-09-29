@@ -8,11 +8,17 @@ const ActivitiesDetail = (props) => {
   const { activityList } = props;
 
   const [breakTime, setBreakTime] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
 
   const addBreakTime = (selectedBreakTime) => {
     console.log(selectedBreakTime);
     setBreakTime(selectedBreakTime);
   };
+  const showToast = () =>{
+    // isClicked = true;
+    let clicked = true
+    setIsClicked(clicked);
+  }
 
   const breakTimes = [10, 20, 30, 40];
   return (
@@ -67,9 +73,9 @@ const ActivitiesDetail = (props) => {
         <div className="bg-[#f5ebe0] rounded-lg justify-around px-1 py-4">
           <BreakTime breakTime={breakTime}></BreakTime>
         </div>
-        <button className="btn btn-wide mx-auto mt-8">Activity Completed</button>
+        <button onClick={()=>showToast()} className="btn btn-wide mx-auto mt-8">Activity Completed</button>
       </div>
-      <Toast></Toast>
+      <Toast isClicked={isClicked}></Toast>
     </div>
   );
 };
