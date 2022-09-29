@@ -23,9 +23,9 @@ const ExerciseTime = (props) => {
 
     // console.log(time);
     return (
-        <div className='flex justify-between items-center px-3'>
+        <div className=' flex justify-between items-center px-3'>
             <h1 className='text-lg font-bold'>Exercise Time: </h1>
-            <p className='font-semibold text-zinc-400'>{totalTime} seconds</p>
+            <p id="totalExerciseTime" className='font-semibold text-zinc-400'>{totalTime} seconds</p>
         </div>
     );
 };

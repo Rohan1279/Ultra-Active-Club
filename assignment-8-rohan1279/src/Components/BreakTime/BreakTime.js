@@ -3,6 +3,8 @@ import React from 'react';
 const BreakTime = (props) => {
     const {breakTime} = props
     const storedBreaktime = localStorage.getItem('selected-break-time')
+    console.log(storedBreaktime);
+
     return (
         <div>
             <div className='flex justify-between items-center px-3'>

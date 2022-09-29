@@ -1,0 +1,11 @@
+.totalExerciseTime{
+    animation: move 1s infinite;
+}
+@keyframes move {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

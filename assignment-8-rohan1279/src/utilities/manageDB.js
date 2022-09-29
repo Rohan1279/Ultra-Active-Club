@@ -1,7 +1,7 @@
 // use local storage to manage cart data
 const addToDb = duration =>{
     let selectedActivity = {};
-
+    
     //get the shopping cart from local storage
     const storedActivity = localStorage.getItem('selected-break-time');
     if(storedActivity){

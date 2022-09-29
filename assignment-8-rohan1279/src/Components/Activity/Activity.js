@@ -6,11 +6,11 @@ const Activity = (props) => {
   const { name, age, time, ratings, img } = activity;
   return (
     <div className="">
-      <div className="card w-full h-[480px] glass">
-        <figure>
-          <img src={img} alt="workout" className="w-full h-44 bg-violet-400 " />
+      <div className="card w-full h-[470px] glass">
+        <figure className="">
+          <img src={img} alt="workout" className="w-full h-44 " />
         </figure>
-        <div className="card-body text-left">
+        <div className="card-body text-left px-3 py-5">
           <h2 className="card-title text-2xl">{name}</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,

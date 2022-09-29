@@ -9,7 +9,7 @@ const Toast = (props) => {
           <div className="toast toast-center toast-bottom " >
             <div className="alert alert-info w-80 ">
               <div className="mx-auto">
-                <span>Activity Completed Successfully</span>
+                <span>Activity Completed Successfully 🥳</span>
               </div>
             </div>
           </div>

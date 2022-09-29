@@ -12,7 +12,7 @@ function App() {
   const addTimeList = (activity) =>{
     const newList = [...activityList,activity]
     setActivityList(newList)
-    addToDb(activity.id)
+    // addToDb(activity.id)
     // setSelectedActivity(activity)
 }
   return (
