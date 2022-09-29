@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Accordion from "../Accordion/Accordion";
 import Activity from "../Activity/Activity";
-// import background from "../../utilities/background.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 
-// import background from '../utilities/background.jpg'
 
 const Activities = (props) => {
     const {addTimeList} = props
@@ -20,8 +20,8 @@ const Activities = (props) => {
     <div className="w-[75%] p-10 " >
         
       <div className="text-left ">
-        <h1 className="text-3xl">Activity Tracker</h1>
-        <h2 className="text-xl">Select today's activity</h2>
+        <h1 className="text-3xl font-bold bg-[#D0D3D4] w-72 py-2 rounded-lg"><FontAwesomeIcon className="ml-3" icon={faDumbbell} /> Activity Tracker</h1>
+        <h2 className="text-2xl font-semibold my-5">Select today's activity</h2>
       </div>
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-5">
         {activities.map((activity) => (
