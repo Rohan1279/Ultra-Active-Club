@@ -1,8 +1,9 @@
 import React from "react";
 
 const Activity = (props) => {
-  console.log(props);
-  const { name, age, time, ratings, img } = props.activity;
+//   console.log(props);
+  const {addTimeList ,activity} = props;
+  const { name, age, time, ratings, img } = activity;
   return (
     <div>
       <div className="card w-full h-[480px] glass">
@@ -17,7 +18,7 @@ const Activity = (props) => {
           <p className="font-medium">Rating: <span className="font-bold">{ratings}</span></p>
           
 
-          <div className="card-actions justify-end">
+          <div onClick={()=>{addTimeList(activity)}} className="card-actions justify-end">
             <button className="btn w-full">Add to list</button>
           </div>
         </div>
