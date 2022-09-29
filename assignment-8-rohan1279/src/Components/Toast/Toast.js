@@ -2,7 +2,7 @@ import React from "react";
 
 const Toast = (props) => {
     const {isClicked} = props
-    console.log(isClicked)
+    // console.log(isClicked)
   if (isClicked) {
     return (
         <div>

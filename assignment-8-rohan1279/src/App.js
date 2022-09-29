@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Activities from './Components/Activities/Activities';
 import ActivitiesDetail from './Components/ActivitiesDetail/ActivitiesDetail';
+import { addToDb } from './utilities/manageDB';
 
 function App() {
   // const [selectedActivity, setSelectedActivity] = useState([])
@@ -11,6 +12,7 @@ function App() {
   const addTimeList = (activity) =>{
     const newList = [...activityList,activity]
     setActivityList(newList)
+    addToDb(activity.id)
     // setSelectedActivity(activity)
 }
   return (

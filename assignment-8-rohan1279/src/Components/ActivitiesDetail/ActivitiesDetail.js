@@ -1,42 +1,49 @@
 import React, { useState } from "react";
-import Break from "../Break/Break";
+import BreakTimes from "../Break/Break";
 import BreakTime from "../BreakTime/BreakTime";
 import ExerciseTime from "../ExerciseTime/ExerciseTime";
 import Toast from "../Toast/Toast";
+import profile from "../../utilities/profile.jpg";
+import { addToDb } from "../../utilities/manageDB";
 
 const ActivitiesDetail = (props) => {
   const { activityList } = props;
 
   const [breakTime, setBreakTime] = useState(0);
+
   const [isClicked, setIsClicked] = useState(false);
 
   const addBreakTime = (selectedBreakTime) => {
     console.log(selectedBreakTime);
     setBreakTime(selectedBreakTime);
+    addToDb(selectedBreakTime);
   };
-  const showToast = () =>{
+  const showToast = () => {
     // isClicked = true;
-    let clicked = true
+    let clicked = true;
     setIsClicked(clicked);
-  }
+  };
 
-  const breakTimes = [10, 20, 30, 40];
+  const breakTimes = [
+    { id: "_b1", duration: 10 },
+    { id: "_b2", duration: 20 },
+    { id: "_b3", duration: 30 },
+    { id: "_b4", duration: 40 },
+  ];
+  // const breakTimes = [10, 20, 30, 40];
+
   return (
     <div className="bg-slate-300 lg:w-[25%] px-8 pt-3 ">
       <div className="sticky top-0 grid grid-cols-1 gap-5">
-        <div className="">
-          <img
-            src="https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/muscular-guy-doing-cable-flys.jpg?itok=cSCNyLEj"
-            alt="profile"
-            className="rounded-full h-12 w-12 mx-auto"
-          />
-          <div>
+        <div className="flex justify-center gap-x-2 bg-red-400">
+          <img src={profile} alt="profile" className="rounded-full w-16 h-16" />
+          <div className="bg-blue-400">
             <h2 className="text-2xl font-semibold ">John Hamm</h2>
             <p>California, USA</p>
           </div>
         </div>
         {/* user profile info */}
-        <div className="bg-gray-100 rounded-lg flex justify-evenly px-2 py-1">
+        <div className="bg-gray-100 shadow-lg rounded-lg flex justify-evenly p-2">
           <div>
             <p className="text-2xl font-semibold">
               75<small className="text-base text-gray-400">kg</small>
@@ -57,23 +64,33 @@ const ActivitiesDetail = (props) => {
         {/* break selection */}
         <div>
           <p className="text-left text-xl font-semibold my-2">Add A Break</p>
-          <div className="bg-gray-100 rounded-lg flex justify-around px-1 py-4">
+          <div className="bg-gray-100 shadow-lg rounded-lg flex justify-around px-1 py-4">
             {breakTimes.map((breakTime) => (
-              <Break breakTime={breakTime} addBreakTime={addBreakTime}></Break>
+              <BreakTimes
+                breakTime={breakTime}
+                addBreakTime={addBreakTime}
+              ></BreakTimes>
             ))}
           </div>
         </div>
         {/*Exercide Detail section  */}
         <div>
-          <p className="text-left text-xl font-semibold my-2">Exercise Detail</p>
-          <div className="bg-gray-100 rounded-lg justify-around px-1 py-4">
+          <p className="text-left text-xl font-semibold my-2">
+            Exercise Detail
+          </p>
+          <div className="bg-gray-100 shadow-lg rounded-lg justify-around px-1 py-4">
             <ExerciseTime activityList={activityList}></ExerciseTime>
           </div>
         </div>
-        <div className="bg-gray-100 rounded-lg justify-around px-1 py-4">
+        <div className="bg-gray-100 shadow-lg rounded-lg justify-around px-1 py-4">
           <BreakTime breakTime={breakTime}></BreakTime>
         </div>
-        <button onClick={()=>showToast()} className="btn btn-wide mx-auto ">Activity Completed</button>
+        <button
+          onClick={() => showToast()}
+          className="btn btn-wide mx-auto my-4"
+        >
+          Activity Completed
+        </button>
       </div>
       <Toast isClicked={isClicked}></Toast>
     </div>
