@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "name": "Lunges",
+      "age": "20-25",
+      "time": "30s",
+      "ratings": 4,
+      "img": "https://experiencelife.lifetime.life/wp-content/uploads/2021/03/The_Lunge.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Pushups",
+      "age": "18-25",
+      "time": "130s",
+      "ratings": 4,
+      "img": "https://www.fitwirr.com/wp-content/uploads/2021/11/push-ups.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Squats",
+      "age": "20-25",
+      "time": "60s",
+      "ratings": 4,
+      "img": "https://1fsawj22yir9otqyf1vuai46-wpengine.netdna-ssl.com/wp-content/uploads/sites/32/2017/06/Screen-Shot-2017-06-22-at-3.25.47-PM-1024x640.png"
+    },
+    {
+      "id": "4",
+      "name": "crunches",
+      "age": "20-35",
+      "time": "30s",
+      "ratings": 4,
+      "img": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1247,c_limit/ddd7c684-8dc4-4195-a07b-fa05fe8e4359/how-to-do-crunches-properly.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Side planks",
+      "age": "20-25",
+      "time": "70s",
+      "ratings": 4,
+      "img": "https://d2z0k43lzfi12d.cloudfront.net/blog/vcdn351/wp-content/uploads/2019/03/thumbnail_1200x800-1024x683.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Dumbbell",
+      "age": "20-40",
+      "time": "85s",
+      "ratings": 5,
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dumbbell-1649167008.jpg?crop=1.00xw:0.334xh;0,0.327xh&resize=640:*"
+    }
+  ]
+  
