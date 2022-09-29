@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header></header>
-      <main className='flex justify-between'>
+      <main className='flex flex-col-reverse lg:flex-row lg:justify-between '>
         <Activities addTimeList={addTimeList}></Activities>
         <ActivitiesDetail 
         activityList={activityList}

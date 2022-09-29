@@ -22,16 +22,16 @@ const ActivitiesDetail = (props) => {
 
   const breakTimes = [10, 20, 30, 40];
   return (
-    <div className="bg-slate-300 w-[25%] px-8 pt-3 ">
+    <div className="bg-slate-300 lg:w-[25%] px-8 pt-3 ">
       <div className="sticky top-0 grid grid-cols-1 gap-5">
-        <div className="flex justify-evenly items-center ">
+        <div className="">
           <img
             src="https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/muscular-guy-doing-cable-flys.jpg?itok=cSCNyLEj"
             alt="profile"
-            className="rounded-full h-12 w-12"
+            className="rounded-full h-12 w-12 mx-auto"
           />
           <div>
-            <h2 className="text-2xl font-semibold">John Hamm</h2>
+            <h2 className="text-2xl font-semibold ">John Hamm</h2>
             <p>California, USA</p>
           </div>
         </div>
@@ -73,7 +73,7 @@ const ActivitiesDetail = (props) => {
         <div className="bg-gray-100 rounded-lg justify-around px-1 py-4">
           <BreakTime breakTime={breakTime}></BreakTime>
         </div>
-        <button onClick={()=>showToast()} className="btn btn-wide mx-auto mt-8">Activity Completed</button>
+        <button onClick={()=>showToast()} className="btn btn-wide mx-auto my-8">Activity Completed</button>
       </div>
       <Toast isClicked={isClicked}></Toast>
     </div>

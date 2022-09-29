@@ -5,7 +5,7 @@ const Activity = (props) => {
   const { addTimeList, activity } = props;
   const { name, age, time, ratings, img } = activity;
   return (
-    <div>
+    <div className="">
       <div className="card w-full h-[480px] glass">
         <figure>
           <img src={img} alt="workout" className="w-full h-44 bg-violet-400 " />
