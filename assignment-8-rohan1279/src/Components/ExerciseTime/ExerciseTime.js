@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 
 const ExerciseTime = (props) => {
     const {activityList} = props
@@ -9,7 +8,7 @@ const ExerciseTime = (props) => {
     for (const activity of activityList) {
         totalTime +=activity.time
     }
-    console.log(totalTime)
+    // console.log(totalTime)
 
 
 
