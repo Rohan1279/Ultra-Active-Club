@@ -2,9 +2,6 @@ import React from "react";
 
 const BreakTimes = (props) => {
   const { breakTime, addBreakTime } = props;
-
-  // console.log(breakTime);
-  console.log(breakTime.id);
   return (
     <div>
       <button

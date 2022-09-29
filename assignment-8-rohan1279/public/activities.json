@@ -1,20 +1,28 @@
 [
-    {
-      "id": "1",
-      "name": "Lunges",
-      "age": "20-25",
-      "time": 30,
-      "ratings": 4,
-      "img": "https://experiencelife.lifetime.life/wp-content/uploads/2021/03/The_Lunge.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Pushups",
-      "age": "18-25",
-      "time": 130,
-      "ratings": 4,
-      "img": "https://assets.gqindia.com/photos/5cee7eb00379a73d25177759/16:9/w_1280,c_limit/Pushup.jpg"
-    },
+  {
+    "id": "6",
+    "name": "Dumbbell",
+    "age": "20-40",
+    "time": 85,
+    "ratings": 5,
+    "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dumbbell-1649167008.jpg?crop=1.00xw:0.334xh;0,0.327xh&resize=640:*"
+  },
+  {
+    "id": "2",
+    "name": "Pushups",
+    "age": "18-25",
+    "time": 130,
+    "ratings": 4,
+    "img": "https://assets.gqindia.com/photos/5cee7eb00379a73d25177759/16:9/w_1280,c_limit/Pushup.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Lunges",
+    "age": "20-25",
+    "time": 30,
+    "ratings": 4,
+    "img": "https://experiencelife.lifetime.life/wp-content/uploads/2021/03/The_Lunge.jpg"
+  },
     {
       "id": "3",
       "name": "Squats",
@@ -38,14 +46,7 @@
       "time": 70,
       "ratings": 4,
       "img": "https://d2z0k43lzfi12d.cloudfront.net/blog/vcdn351/wp-content/uploads/2019/03/thumbnail_1200x800-1024x683.jpg"
-    },
-    {
-      "id": "6",
-      "name": "Dumbbell",
-      "age": "20-40",
-      "time": 85,
-      "ratings": 5,
-      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dumbbell-1649167008.jpg?crop=1.00xw:0.334xh;0,0.327xh&resize=640:*"
     }
+    
   ]
   

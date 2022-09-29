@@ -20,7 +20,7 @@ const Activities = (props) => {
     <div className="w-[75%] p-10 mx-auto bg-[#dee2e6]" >
         
       <div className="text-left ">
-        <h1 className="text-3xl font-bold bg-[#D0D3D4] w-80 text-center py-2 rounded-lg shadow-md">
+        <h1 className="text-3xl font-bold bg-[#D0D3D4] w-2/5  mx-auto lg:ml-0  text-center py-2 rounded-lg shadow-md">
           <FontAwesomeIcon icon={faDumbbell} /> Activity Tracker</h1>
         <h2 className="text-2xl font-semibold my-5">Select today's activity</h2>
       </div>
