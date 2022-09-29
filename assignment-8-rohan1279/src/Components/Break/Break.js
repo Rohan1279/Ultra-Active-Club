@@ -9,7 +9,7 @@ const Break = (props) => {
         onClick={() => {
           addBreakTime(breakTime);
         }}
-        className="active:bg-blue-400 active:text-white bg-white p-2 rounded-full font-medium"
+        className="focus:bg-blue-400 focus:text-white bg-white p-2 rounded-full font-medium"
       >
         {breakTime}s
       </button>

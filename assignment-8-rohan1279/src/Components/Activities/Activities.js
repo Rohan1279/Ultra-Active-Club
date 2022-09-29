@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Accordion from "../Accordion/Accordion";
 import Activity from "../Activity/Activity";
 
 const Activities = (props) => {
@@ -26,6 +27,9 @@ const Activities = (props) => {
           addTimeList={addTimeList}
           ></Activity>
         ))}
+      </div>
+      <div>
+        <Accordion></Accordion>
       </div>
     </div>
   );
