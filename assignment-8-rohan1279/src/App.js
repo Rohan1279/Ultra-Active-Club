@@ -1,10 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Activities from './Components/Activities/Activities';
+import ActivitiesDetail from './Components/ActivitiesDetail/ActivitiesDetail';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-4xl'>Tailwind & daisyUi added</h1>
+      <header></header>
+      <main className='flex justify-between'>
+        <Activities></Activities>
+        <ActivitiesDetail></ActivitiesDetail>
+      </main>
+      <footer></footer>
     </div>
   );
 }
