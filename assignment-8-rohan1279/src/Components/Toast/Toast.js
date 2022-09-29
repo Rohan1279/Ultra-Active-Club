@@ -6,9 +6,9 @@ const Toast = (props) => {
   if (isClicked) {
     return (
         <div>
-          <div className="toast toast-end" >
-            <div className="alert alert-info">
-              <div>
+          <div className="toast toast-center toast-bottom " >
+            <div className="alert alert-info w-80 ">
+              <div className="mx-auto">
                 <span>Activity Completed Successfully</span>
               </div>
             </div>

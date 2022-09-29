@@ -39,7 +39,7 @@ const ActivitiesDetail = (props) => {
         <div className="bg-gray-100 rounded-lg flex justify-evenly px-2 py-1">
           <div>
             <p className="text-2xl font-semibold">
-              75<small className="font-light text-base">kg</small>
+              75<small className="text-base text-gray-400">kg</small>
             </p>
             <p className="text-sm">Weight</p>
           </div>
@@ -49,14 +49,14 @@ const ActivitiesDetail = (props) => {
           </div>
           <div>
             <p className="text-2xl font-semibold">
-              25<small className="font-light text-base">yrs</small>
+              25<small className="text-base text-gray-400">yrs</small>
             </p>
             <p className="text-sm">Age</p>
           </div>
         </div>
         {/* break selection */}
         <div>
-          <p className="text-left text-xl font-semibold">Add A Break</p>
+          <p className="text-left text-xl font-semibold my-2">Add A Break</p>
           <div className="bg-gray-100 rounded-lg flex justify-around px-1 py-4">
             {breakTimes.map((breakTime) => (
               <Break breakTime={breakTime} addBreakTime={addBreakTime}></Break>
@@ -65,7 +65,7 @@ const ActivitiesDetail = (props) => {
         </div>
         {/*Exercide Detail section  */}
         <div>
-          <p className="text-left text-xl font-semibold">Exercise Detail</p>
+          <p className="text-left text-xl font-semibold my-2">Exercise Detail</p>
           <div className="bg-gray-100 rounded-lg justify-around px-1 py-4">
             <ExerciseTime activityList={activityList}></ExerciseTime>
           </div>
@@ -73,7 +73,7 @@ const ActivitiesDetail = (props) => {
         <div className="bg-gray-100 rounded-lg justify-around px-1 py-4">
           <BreakTime breakTime={breakTime}></BreakTime>
         </div>
-        <button onClick={()=>showToast()} className="btn btn-wide mx-auto my-8">Activity Completed</button>
+        <button onClick={()=>showToast()} className="btn btn-wide mx-auto ">Activity Completed</button>
       </div>
       <Toast isClicked={isClicked}></Toast>
     </div>
