@@ -20,7 +20,7 @@ const ActivitiesDetail = (props) => {
   };
   const showToast = () => {
     // isClicked = true;
-    localStorage.setItem('selected-break-time',0)
+    // localStorage.setItem('selected-break-time',0)
     let clicked = true;
     setIsClicked(clicked);
   };
