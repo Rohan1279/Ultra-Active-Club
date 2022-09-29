@@ -22,8 +22,8 @@ const ActivitiesDetail = (props) => {
 
   const breakTimes = [10, 20, 30, 40];
   return (
-    <div className="bg-red-400 w-[25%] px-8 pt-3 ">
-      <div className="sticky top-0 bg-violet-300 grid grid-cols-1 gap-5">
+    <div className="bg-slate-300 w-[25%] px-8 pt-3 ">
+      <div className="sticky top-0 grid grid-cols-1 gap-5">
         <div className="flex justify-evenly items-center ">
           <img
             src="https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/muscular-guy-doing-cable-flys.jpg?itok=cSCNyLEj"
@@ -36,7 +36,7 @@ const ActivitiesDetail = (props) => {
           </div>
         </div>
         {/* user profile info */}
-        <div className="bg-[#f5ebe0] rounded-lg flex justify-evenly px-2 py-1">
+        <div className="bg-gray-100 rounded-lg flex justify-evenly px-2 py-1">
           <div>
             <p className="text-2xl font-semibold">
               75<small className="font-light text-base">kg</small>
@@ -57,7 +57,7 @@ const ActivitiesDetail = (props) => {
         {/* break selection */}
         <div>
           <p className="text-left text-xl font-semibold">Add A Break</p>
-          <div className="bg-[#f5ebe0] rounded-lg flex justify-around px-1 py-4">
+          <div className="bg-gray-100 rounded-lg flex justify-around px-1 py-4">
             {breakTimes.map((breakTime) => (
               <Break breakTime={breakTime} addBreakTime={addBreakTime}></Break>
             ))}
@@ -66,11 +66,11 @@ const ActivitiesDetail = (props) => {
         {/*Exercide Detail section  */}
         <div>
           <p className="text-left text-xl font-semibold">Exercise Detail</p>
-          <div className="bg-[#f5ebe0] rounded-lg justify-around px-1 py-4">
+          <div className="bg-gray-100 rounded-lg justify-around px-1 py-4">
             <ExerciseTime activityList={activityList}></ExerciseTime>
           </div>
         </div>
-        <div className="bg-[#f5ebe0] rounded-lg justify-around px-1 py-4">
+        <div className="bg-gray-100 rounded-lg justify-around px-1 py-4">
           <BreakTime breakTime={breakTime}></BreakTime>
         </div>
         <button onClick={()=>showToast()} className="btn btn-wide mx-auto mt-8">Activity Completed</button>

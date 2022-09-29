@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Accordion from "../Accordion/Accordion";
 import Activity from "../Activity/Activity";
+// import background from "../../utilities/background.jpg"
+
+// import background from '../utilities/background.jpg'
 
 const Activities = (props) => {
     const {addTimeList} = props
@@ -14,7 +17,8 @@ const Activities = (props) => {
   }, []);
   
   return (
-    <div className="bg-blue-300 w-[75%] p-10">
+    <div className="w-[75%] p-10 " >
+        
       <div className="text-left ">
         <h1 className="text-3xl">Activity Tracker</h1>
         <h2 className="text-xl">Select today's activity</h2>
